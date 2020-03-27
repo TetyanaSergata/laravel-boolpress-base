@@ -19,7 +19,7 @@ class CreatePhotosTable extends Migration
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users');
-                
+
             $table->text('path');
         });
     }
